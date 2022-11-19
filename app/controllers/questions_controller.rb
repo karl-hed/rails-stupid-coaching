@@ -5,6 +5,7 @@ class QuestionsController < ApplicationController
   end
 
   def answer
+    # raise
     if params[:question].present?
       @question = params[:question]
       if @question == 'I am going to work'
@@ -16,6 +17,5 @@ class QuestionsController < ApplicationController
       end
     end
     @answer
-    # raise
   end
 end
